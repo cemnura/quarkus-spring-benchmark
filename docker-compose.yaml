@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  postgresql:
+    image: postgres:10.5
+    environment:
+      POSTGRES_USER: "test"
+      POSTGRES_PASSWORD: "test"
+      POSTGRES_DB: "test"
+    ports:
+      - "5432:5432"
